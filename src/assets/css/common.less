@@ -1,0 +1,28 @@
+//当前主流的设备尺寸
+@mediaList : 320px, 360px, 375px, 384px, 400px, 414px, 424px, 480px, 540px, 720px, 750px;
+
+//设计稿的尺寸
+@psdWidth: 750px;
+
+//预设的基准值
+@baseFont: 50px;
+
+/*划分的份数*/
+@num :10;
+
+//定义函数生成不同尺寸下基准值的函数
+.mediaInit(@index) when (@index <= length(@mediaList)){
+  @media screen and (min-width: extract(@mediaList, @index)) {
+    html{
+      font-size: extract(@mediaList, @index) / @num;
+    }
+  }
+  .mediaInit(@index + 1)
+}
+
+html{
+  font-size: @baseFont;
+}
+
+//调用函数
+.mediaInit(1);
