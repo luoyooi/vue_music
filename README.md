@@ -1,24 +1,18 @@
-# vue_music
+# 疫情地图信息展示
 
-## Project setup
-```
-yarn install
-```
+## 项目概况
+本项目通过调用QQ音乐API，构建了一个移动端音乐播放界面，实现了基本的音乐搜索、添加播放列表、音乐播放等功能。
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## 技术栈
+vue2.0、vue-router、vue-aplayer、axios、less、element-ui
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## 开发环境依赖
 
-### Lints and fixes files
-```
-yarn lint
-```
+- [node](https://nodejs.org/en/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [yarn](https://yarnpkg.com/zh-Hans/)
+
+- [eslint](http://eslint.org/)
+
+## 提示
+项目仅供学习研究所用，无任何其他用途。
